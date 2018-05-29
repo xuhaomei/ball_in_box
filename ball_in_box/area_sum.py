@@ -17,7 +17,7 @@ if __name__ == '__main__':
     circles = bb.ball_in_box(num_of_circle, blockers)
     
     if num_of_circle == len(circles) and val.validate(circles, blockers):
-        area = area_sum(circles)
+        
         i = 0.0
         max = 0.0
         temp=0.0
