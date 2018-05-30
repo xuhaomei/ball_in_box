@@ -17,16 +17,7 @@ if __name__ == '__main__':
     circles = bb.ball_in_box(num_of_circle, blockers)
     
     if num_of_circle == len(circles) and val.validate(circles, blockers):
-        
-        i = 0.0
-        max = 0.0
-        temp=0.0
-        while i <= 1000:
-            circles = bb.ball_in_box(num_of_circle, blockers)
-            temp = area_sum(circles)
-            if  temp>max:
-                max=temp
-            i+=1
+        area = area_sum(circles)
         print("Total area: {}".format(max))
     else:
         print("Error: no good circles.")
